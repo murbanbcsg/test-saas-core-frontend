@@ -4,7 +4,8 @@
 	"description": "This is the frontend common library for saas platform - test version",
 	"private": true,
 	"scripts": {
-		"build_standalone": "gem update --system && gem install sass && gem install compass && gem install bootstrap-sass -v 3.2 && npm install"
+		"build_standalone": "gem update --system && gem install sass && gem install compass && gem install bootstrap-sass -v 3.2 && npm install",
+		"start": ""
 	},
 	"repository": {
 		"type": "git",
@@ -17,6 +18,10 @@
 	},
 	"homepage": "https://github.com/murbanbcsg/test-saas-core-frontend",
 	"devDependencies": {
-		"grunt": "^0.4.5"
+		"grunt": "^0.4.5",
+		"grunt-cli": "^0.1.13",
+		"grunt-contrib-jasmine": "^0.8.1",
+		"grunt-jasmine": "^0.1.0",
+		"grunt-template-jasmine-istanbul": "^0.3.0"
 	}
 }
