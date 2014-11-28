@@ -1,0 +1,22 @@
+{
+	"name": "test-saas-core-frontend",
+	"version": "1.0.0",
+	"description": "This is the frontend common library for saas platform - test version",
+	"private": true,
+	"scripts": {
+		"build_standalone": "gem update --system && gem install sass && gem install compass && gem install bootstrap-sass -v 3.2 && npm install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/murbanbcsg/test-saas-core-frontend"
+	},
+	"author": "Nicholas Urban",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/murbanbcsg/test-saas-core-frontend/issues"
+	},
+	"homepage": "https://github.com/murbanbcsg/test-saas-core-frontend",
+	"devDependencies": {
+		"grunt": "^0.4.5"
+	}
+}
