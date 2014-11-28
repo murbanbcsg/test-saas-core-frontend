@@ -11,6 +11,11 @@ module.exports = function(grunt) {
 				coverage: 'coverage'
 			}
 		},
+		githooks: {
+			all: {
+				'pre-commit': 'jasmine',
+			}
+		},
 		watch: {
 			configFiles: {
 				files: ['Gruntfile.js'],
@@ -45,9 +50,10 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-githooks');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-	grunt.registerTask('default', ['jasmine', 'watch']);
+	grunt.registerTask('default', ['githooks', 'jasmine', 'watch']);
 
 };
